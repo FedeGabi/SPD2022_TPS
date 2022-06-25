@@ -116,21 +116,23 @@ void loop()
     if(millis()- millisAhora >= 1000)
     {      
       
-      if(tiempoTotal < 1023)
+      if(tiempoTotal < 1024)
       {
-        tiempoTotal++;
        	dibujar(tiempoTotal);
         millisAhora = millis();
-      	Serial.print ("Seconds: ");
-      	Serial.print (tiempoTotal);
-      	Serial.print (" | ");
-      	Serial.print ("Binary: ");
-      	Serial.println(tiempoTotal,BIN);
-    
+        if(tiempoTotal>0)
+        {
+            Serial.print ("Seconds: ");
+      		Serial.print (tiempoTotal);
+      		Serial.print (" | ");
+      		Serial.print ("Binary: ");
+      		Serial.println(tiempoTotal,BIN);
+        }    
       }else
       {
         apagarLeds();
       }
+      tiempoTotal++;
     }
 
     
