@@ -13,6 +13,6 @@
 ---
 
 ### TP_01 | Cronometro Binario
-#### Link: [Link a Tinker Publico]
+#### Link: https://www.tinkercad.com/things/cLTId4DqH8x
 
 ---
